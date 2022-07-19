@@ -1,0 +1,8 @@
+---
+applications:
+  - name: irap
+    memory: 512M
+    buildpacks:
+      - python_buildpack
+    services:
+      - irap-postgres

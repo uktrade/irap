@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "irap"
+version = "0.1.0"
+description = ""
+authors = ["Sam Dudley <samuel.dudley@digital.trade.gov.uk>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.0.6"
+psycopg2 = "^2.9.3"
+whitenoise = "^6.2.0"
+django-environ = "^0.9.0"
+waitress = "^2.1.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+pytest = "^7.1.2"
+bpython = "^0.22.1"
+mypy = "^0.961"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target_version = ['py310']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip_gitignore = true
+line_length = 88
+lines_after_imports = 2
